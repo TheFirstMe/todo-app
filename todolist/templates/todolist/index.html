@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList App</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'todolist/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'todolist/styles.css' %}" />
+  </head>
+  <body>
+    <div class="container-fluid" id="wrapper">
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-4" id="content">
+          <h1>What to do today</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

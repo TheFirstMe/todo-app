@@ -1,0 +1,27 @@
+body {
+    background-color: #3399ff;
+    font-family: 'Oswald', 'Future', sans-serif;
+}
+
+#wrapper {
+    margin-top: 10px !important;
+}
+
+#content {
+    background-color: #ffff99;
+    padding: 25px;
+}
+
+#content > h2 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0;
+}
+
+.t10 {
+    margin-top: 10px;
+}
+
+.t20 {
+    margin-top: 20px;
+}
