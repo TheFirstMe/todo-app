@@ -19,7 +19,7 @@ body {
 }
 
 
-.todo-completed {
+.todo-completed, .todo-completed:hover, .todo-completed:focus {
   text-decoration: line-through;
   background: rgba(149, 165, 166, 0.3);
 }

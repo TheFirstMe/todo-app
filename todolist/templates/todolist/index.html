@@ -26,16 +26,11 @@
         <div class="col-lg-4 offset-lg-4" id="content">
           <h1>What to do today</h1>
 
-          <form action="#" method="POST" role="form">
+          <form action="{% url 'add' %}" method="POST" role="form">
+            {% csrf_token %}
             <div class="form-group">
               <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter todo e.g. Wash my car"
-                  aria-label="Todo"
-                  aria-describedby="add-btn"
-                />
+                {{ form.text }}
                 <span class="input-group-btn">
                   <button type="submit" class="btn btn-success" id="add-btn">
                     ADD
@@ -83,13 +78,18 @@
           </div>
 
           <ul class="list-group mt-3">
-            {% for todo_item in todo_items %}
-            <li
-              class="list-group-item {% if todo_item.completed %}todo-completed{% endif %}"
-            >
-              {{todo_item.text}}
-            </li>
-            {% endfor %}
+            {% for todo_item in todo_items %} {% comment %}
+            <a href="{% url 'complete' todo_item.id %}">
+              {% endcomment %}
+              <a
+                href="{% url 'complete' todo_item.id %}"
+                class="list-group-item list-group-item-action {% if todo_item.completed %}todo-completed{% endif %}"
+              >
+                {{todo_item.text}}
+              </a>
+              {% comment %}
+            </a>
+            {% endcomment %} {% endfor %}
           </ul>
         </div>
       </div>
