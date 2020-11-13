@@ -1,27 +1,34 @@
 body {
-    background-color: #3399ff;
-    font-family: 'Oswald', 'Future', sans-serif;
+  background: #3399ff;
+  font-family: "Oswald", "Futura", sans-serif;
 }
 
 #wrapper {
-    margin-top: 10px !important;
+  margin-top: 10% !important;
 }
 
 #content {
-    background-color: #ffff99;
-    padding: 25px;
+  background: #ffff99;
+  padding: 25px;
 }
 
 #content > h2 {
-    font-size: 18px;
-    text-align: center;
-    padding-top: 0;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 0;
 }
 
-.t10 {
-    margin-top: 10px;
+
+.todo-completed {
+  text-decoration: line-through;
+  background: rgba(149, 165, 166, 0.3);
 }
 
-.t20 {
-    margin-top: 20px;
+footer {
+  margin-top: 20px;
+  color: white;
+}
+
+.bi.bi-trash {
+    vertical-align: -1.5px;
 }
