@@ -44,7 +44,7 @@
             <div class="col-lg-12">
               <div class="btn-toolbar">
                 <div class="btn-group mr-2">
-                  <button type="button" class="btn btn-warning">
+                  <a href="{% url 'deleteCompleted' %}" class="btn btn-warning">
                     <svg
                       class="bi trash"
                       width="1em"
@@ -56,10 +56,10 @@
                       />
                     </svg>
                     DELETE COMPLETED
-                  </button>
+                  </a>
                 </div>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-danger">
+                  <a href="{% url 'delete' %}" class="btn btn-danger">
                     <svg
                       class="bi trash"
                       width="1em"
@@ -71,7 +71,7 @@
                       />
                     </svg>
                     DELETE ALL
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
